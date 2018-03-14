@@ -16,3 +16,7 @@ Live-streaming sentiment analysis application created with Python and Dash, host
 - Fill in your Twitter App credentials to `twitter_stream.py`. Go to [**apps.twitter.com**](https://apps.twitter.com/) to set that up if you need to.
 - Run `twitter_stream.py` to build database
 - If you're using this locally, you can run the application with the `dev_server.py` script. If you want to deploy this to a webserver, see my [**deploying Dash application tutorial**](https://pythonprogramming.net/deploy-vps-dash-data-visualization/)
+
+
+
+![tst](https://github.com/Sentdex/socialsentiment/blob/master/DXzF9pyUQAAX1V7.jpg)
