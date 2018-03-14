@@ -33,4 +33,4 @@ Want to help contribute???
 
 ## Credits
 
-The speed of the application, especially with a database with 10's of millions of records is thanks entirely to [Daniel Kukiela](https://github.com/daniel-kukiela/) who helped us to convert from regular sqlite to using fts, helping with the queries, new database structure, caching, and more.
+The speed of the application, especially with a database with 10's of millions of records is thanks entirely to [**Daniel Kukiela**](https://github.com/daniel-kukiela/) who helped us to convert from regular sqlite to using fts, helping with the queries, new database structure, caching, and more.
