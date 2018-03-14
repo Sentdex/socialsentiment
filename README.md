@@ -31,5 +31,6 @@ Want to help contribute???
 - The interactive search is cool, but also does a search in the database per-character. It would be nice if it didn't search per key-press. Not sure I want a search button, I like the streamlined interactivity, but maybe wait 0.2 seconds or something without any new keypresses to perform the search? Something like that might help with speeds. I really do not know the best option here, I just know this isn't idea.
 - Other manipulations or ideas for interactivity? Feel free to show them in a PR.
 
+## Credits
 
-
+The speed of the application, especially with a database with 10's of millions of records is thanks entirely to [Daniel Kukiela](https://github.com/daniel-kukiela/) who helped us to convert from regular sqlite to using fts, helping with the queries, new database structure, caching, and more.
