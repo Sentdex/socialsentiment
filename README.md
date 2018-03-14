@@ -18,7 +18,18 @@ Live-streaming sentiment analysis application created with Python and Dash, host
 - Fill in your Twitter App credentials to `twitter_stream.py`. Go to [**apps.twitter.com**](https://apps.twitter.com/) to set that up if you need to.
 - Run `twitter_stream.py` to build database
 - If you're using this locally, you can run the application with the `dev_server.py` script. If you want to deploy this to a webserver, see my [**deploying Dash application tutorial**](https://pythonprogramming.net/deploy-vps-dash-data-visualization/)
+- Consider running the `db-truncate.py` from time to time (or via a cronjob), to keep the database reasonably sized. In its current state, the database really doesn't need to store more than 2-3 days of data most likely. 
 
+
+## Todo
+
+Want to help contribute???
+
+- Code is ugly. Low hanging fruit is just making the code not so ugly. Up to this point, I've just been in "make it work" mode.
+- App is ugly. I am not a designer. This app is prettttttyyyyyy gross. Think you have a better design? Halp. 
+- Click-able related terms and trending terms would be nice. I tried, but failed at this. It'd be cool to see a related term, and be able to just click on it, and this becomes the new searched term, for example.
+- The interactive search is cool, but also does a search in the database per-character. It would be nice if it didn't search per key-press. Not sure I want a search button, I like the streamlined interactivity, but maybe wait 0.2 seconds or something without any new keypresses to perform the search? Something like that might help with speeds. I really do not know the best option here, I just know this isn't idea.
+- Other manipulations or ideas for interactivity? Feel free to show them in a PR.
 
 
 
