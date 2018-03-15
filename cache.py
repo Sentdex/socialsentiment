@@ -72,13 +72,10 @@ class cache_memcached:
     # get cache element
     def get(self, pool, key):
         # get and return data from cache
-        print('get', self.prefix + '##' + pool + '##' + key.encode('ascii', 'xmlcharrefreplace').decode('ascii'))
-        print(self.client.get(self.prefix + '##' + pool + '##' + key.encode('ascii', 'xmlcharrefreplace').decode('ascii')))
         return self.client.get(self.prefix + '##' + pool + '##' + key.encode('ascii', 'xmlcharrefreplace').decode('ascii'))
 
     # set element in cache
     def set(self, pool, key, value, ttl=0):
-        print('set', self.prefix + '##' + pool + '##' + key.encode('ascii', 'xmlcharrefreplace').decode('ascii'))
         self.client.set(self.prefix + '##' + pool + '##' + key.encode('ascii', 'xmlcharrefreplace').decode('ascii'), value, ttl)
 
 
@@ -86,7 +83,6 @@ class cache_memcached:
 cache = None
 
 # if dev - use sqlite
-#print(os.environ)
 if os.environ.get('dev', False):
     import sqlite3
     from threading import Timer
